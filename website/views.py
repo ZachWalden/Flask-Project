@@ -9,3 +9,7 @@ def home():
 @views.route('/table')
 def table():
     return render_template("table.html")
+
+@views.before_app_request
+def varacc():
+    school = "BIG SCHOOL"
